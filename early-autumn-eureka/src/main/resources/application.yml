@@ -1,0 +1,50 @@
+spring:
+  profiles:
+    active: node-one
+
+---
+server:
+  port: 9001
+
+eureka:
+  instance:
+    hostname: eurekaNodeOne.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+spring:
+  profiles: node-one
+---
+server:
+  port: 9002
+
+eureka:
+  instance:
+    hostname: eurekaNodeOne.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+spring:
+  profiles: node-one
+
+---
+server:
+  port: 9003
+
+eureka:
+  instance:
+    hostname: eurekaNodeOne.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+spring:
+  profiles: node-one
+
+
+
