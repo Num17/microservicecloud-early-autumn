@@ -6,30 +6,37 @@ spring:
 server:
   port: 9001
 
+
 eureka:
   instance:
+#    hostname: localhost
     hostname: eurekaNodeOne.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
+#      defaultZone: http://localhost/eureka
       defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
 spring:
   profiles: node-one
+  application:
+    name: eureka-node-one
 ---
 server:
   port: 9002
 
 eureka:
   instance:
-    hostname: eurekaNodeOne.com
+    hostname: eurekaNodeTwo.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeThree.com/eureka
 spring:
-  profiles: node-one
+  profiles: node-two
+  application:
+    name: eureka-node-two
 
 ---
 server:
@@ -37,14 +44,16 @@ server:
 
 eureka:
   instance:
-    hostname: eurekaNodeOne.com
+    hostname: eurekaNodeThree.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka
 spring:
-  profiles: node-one
+  profiles: node-three
+  application:
+    name: eureka-node-three
 
 
 

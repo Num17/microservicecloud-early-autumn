@@ -1,0 +1,22 @@
+#实例名称
+spring:
+  application:
+    name: early-autumn-zuul
+#端口号
+server:
+  port: 8888
+
+#服务注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+
+zuul:
+  routes:
+    order:
+      path: /order/**
+      serviceId: eureka-provider-order
+    account:
+      path: /account/**
+      serviceId: eureka-provider-account
