@@ -101,6 +101,8 @@
 
     <modules>
         <module>early-autumn-eureka</module>
+        <module>early-autumn-zuul</module>
+        <module>early-autumn-hystrix-dashboard</module>
     </modules>
 
 </project>
