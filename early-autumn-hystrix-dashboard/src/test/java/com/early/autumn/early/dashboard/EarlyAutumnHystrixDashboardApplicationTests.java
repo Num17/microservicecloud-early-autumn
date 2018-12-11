@@ -1,4 +1,4 @@
-package com.early.autumn.earlyautumnhystrixdashboard;
+package com.early.autumn.early.dashboard;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -13,10 +13,14 @@ eureka:
       defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
 
 zuul:
-  routes:
-    order:
-      path: /order/**
-      serviceId: eureka-provider-order
-    account:
-      path: /account/**
-      serviceId: eureka-provider-account
+#统一访问前缀
+  prefix: earlyautumn
+#  routes:
+#    routes后面接着的是服务名,path则为映射规则
+#    early-autumn-user:
+#      path: /user/**
+#    account:
+#      path: /account/**
+#      serviceId: eureka-provider-account
+#不给外部提供访问权限，只给内部client提供调用
+  ignored-services: early-autumn-user
