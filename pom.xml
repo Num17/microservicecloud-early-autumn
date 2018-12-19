@@ -101,11 +101,12 @@
 
     <modules>
         <module>early-autumn-api</module>
-        <module>early-autumn-zuul</module>
-        <module>early-autumn-user</module>
         <module>early-autumn-common</module>
         <module>early-autumn-eureka</module>
         <module>early-autumn-hystrix-dashboard</module>
+        <module>early-autumn-user</module>
+        <module>early-autumn-zuul</module>
+        <module>eayly-autumn-config</module>
     </modules>
 
 </project>
