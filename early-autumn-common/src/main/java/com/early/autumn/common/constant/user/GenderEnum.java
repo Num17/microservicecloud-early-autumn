@@ -1,6 +1,8 @@
 package com.early.autumn.common.constant.user;
 
-public enum GenderEnum {
+import com.early.autumn.common.handler.BaseEnum;
+
+public enum GenderEnum implements BaseEnum<GenderEnum> {
 
     MAN("男", 0),
     WOMAN("女", 1);
@@ -13,6 +15,7 @@ public enum GenderEnum {
         this.index = index;
     }
 
+    @Override
     public String getValue() {
         return this.value;
     }

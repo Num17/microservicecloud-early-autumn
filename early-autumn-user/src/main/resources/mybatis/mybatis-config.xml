@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--驼峰命名-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.early.autumn.common.constant.user.GenderEnum" alias="GenderEnum"/>
+    </typeAliases>
+
+    <typeHandlers>
+        <typeHandler handler="com.early.autumn.common.handler.EnumHandler"
+                     javaType="com.early.autumn.common.constant.user.GenderEnum"
+                     jdbcType="INTEGER"/>
+    </typeHandlers>
+
+
+    <!--sql拦截配置-->
+    <!--<plugins>-->
+    <!--<plugin interceptor="com.github.pagehelper.PageHelper">-->
+    <!--&lt;!&ndash; 设置数据库类型 Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库&ndash;&gt;-->
+    <!--<property name="dialect" value="mysql"/>-->
+    <!--</plugin>-->
+    <!--</plugins>-->
+
+
+</configuration>

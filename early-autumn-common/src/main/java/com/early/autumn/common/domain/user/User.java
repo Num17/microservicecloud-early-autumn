@@ -31,5 +31,7 @@ public class User {
     private Integer cityId;
     //创建时间
     private Date createTime;
+    //上次修改时间
+    private Date lastUpdateTime;
 
 }

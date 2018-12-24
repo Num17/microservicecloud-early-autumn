@@ -6,7 +6,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+      defaultZone: http://localhost/eureka
+#      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
 
   instance:
     instance-id: early-autumn-user
+
