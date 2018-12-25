@@ -4,15 +4,15 @@ import com.early.autumn.common.handler.BaseEnum;
 
 public enum GenderEnum implements BaseEnum<GenderEnum> {
 
-    MAN("男", 0),
-    WOMAN("女", 1);
+    MAN(0, "男"),
+    WOMAN(1, "女");
 
+    private int code;
     private String value;
-    private int index;
 
-    GenderEnum(String value, int index) {
+    GenderEnum(int code, String value) {
+        this.code = code;
         this.value = value;
-        this.index = index;
     }
 
     @Override
@@ -20,18 +20,19 @@ public enum GenderEnum implements BaseEnum<GenderEnum> {
         return this.value;
     }
 
-    public int getIndex() {
-        return this.index;
+    //TODO 与上述方法一起有点怪异，后续优化
+    public int getCode() {
+        return code;
     }
 
-    public String valueOf(int index) {
+    public String valueOf(int code) {
         for (GenderEnum genderEnum : values()) {
-            if (genderEnum.getIndex() == index) {
-                return genderEnum.getValue();
+            if (genderEnum.getCode() == code) {
+                return genderEnum.value;
             }
         }
 
-        throw new RuntimeException("没有找到对应的枚举值：" + index);
+        throw new RuntimeException("没有找到对应的枚举值：" + code);
 
     }
 

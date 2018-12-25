@@ -6,9 +6,19 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost/eureka
+      defaultZone: http://localhost:9001/eureka
 #      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
 
   instance:
+    hostname: localhost
     instance-id: early-autumn-user
+    prefer-ip-address: true
+
+
+
+info:
+  app.name: user
+  company.name: ZGZ
+#  build.artifactId: $proj
+#  build.version: $project.version$
 

@@ -7,7 +7,7 @@ public interface BaseEnum<E extends Enum<?>> {
 
 //    public T getStatus();
 
-    public String getValue();
+    String getValue();
 
 }
 

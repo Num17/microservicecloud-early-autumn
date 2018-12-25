@@ -9,15 +9,15 @@ server:
 
 eureka:
   instance:
-#    hostname: localhost
-    hostname: eurekaNodeOne.com
+    hostname: localhost
+#    hostname: eurekaNodeOne.com
     prefer-ip-address: true
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-#      defaultZone: http://localhost/eureka
-      defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+      defaultZone: http://localhost:9001/eureka
+#      defaultZone: http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
 spring:
   profiles: node-one
   application:

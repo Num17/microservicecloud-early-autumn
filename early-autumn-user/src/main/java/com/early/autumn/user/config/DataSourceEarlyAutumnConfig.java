@@ -38,10 +38,10 @@ public class DataSourceEarlyAutumnConfig {
     @Bean(name = DATA_SOURCE_PROPERTY)
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource(
-            @Value("${database.test.driver}") String driver,
-            @Value("${database.test.username}") String username,
-            @Value("${database.test.password}") String password,
-            @Value("${database.test.url}") String url
+            @Value("${database.earlyautumn.driver}") String driver,
+            @Value("${database.earlyautumn.username}") String username,
+            @Value("${database.earlyautumn.password}") String password,
+            @Value("${database.earlyautumn.url}") String url
     ) {
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setUrl(url);

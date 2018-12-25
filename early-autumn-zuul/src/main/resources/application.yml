@@ -10,17 +10,15 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
+      defaultZone: http://localhost:9001/eureka
+#      defaultZone: http://eurekaNodeOne.com/eureka,http://eurekaNodeTwo.com/eureka,http://eurekaNodeThree.com/eureka
 
 zuul:
-#统一访问前缀
-  prefix: earlyautumn
-#  routes:
+#统一访问前缀，注意：一定要加/,不然访问不到，死都访问不到
+  prefix: /earlyautumn
+  routes:
 #    routes后面接着的是服务名,path则为映射规则
-#    early-autumn-user:
-#      path: /user/**
-#    account:
-#      path: /account/**
-#      serviceId: eureka-provider-account
+    early-autumn-user:
+      path: /user/**
 #不给外部提供访问权限，只给内部client提供调用
-  ignored-services: early-autumn-user
+#  ignored-services: early-autumn-user
