@@ -1,4 +1,4 @@
-package com.early.autumn.earlyautumnapi;
+package com.early.autumn.earlyautumn.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

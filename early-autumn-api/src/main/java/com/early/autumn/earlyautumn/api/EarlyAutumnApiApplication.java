@@ -1,4 +1,4 @@
-package com.early.autumn.earlyautumnapi;
+package com.early.autumn.earlyautumn.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

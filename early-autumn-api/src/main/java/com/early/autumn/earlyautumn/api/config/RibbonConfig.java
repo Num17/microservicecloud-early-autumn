@@ -1,4 +1,4 @@
-package com.early.autumn.earlyautumnapi.config;
+package com.early.autumn.earlyautumn.api.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-//@EnableCircuitBreaker
+@EnableCircuitBreaker
 @EnableDiscoveryClient
 @SpringBootApplication
 public class EarlyAutumnUserApplication {

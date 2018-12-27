@@ -1,0 +1,21 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: early-autumn-api
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+
+  instance:
+      hostname: localhost
+      instance-id: early-autumn-user
+      prefer-ip-address: true
+
+
+info:
+  app.name: api
+  company.name: ZGZ
