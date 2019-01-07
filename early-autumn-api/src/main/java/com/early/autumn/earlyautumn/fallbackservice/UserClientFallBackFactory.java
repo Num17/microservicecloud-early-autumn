@@ -1,7 +1,7 @@
-package com.early.autumn.earlyautumn.api.fallbackservice;
+package com.early.autumn.earlyautumn.fallbackservice;
 
-import com.early.autumn.common.domain.user.User;
-import com.early.autumn.earlyautumn.api.clients.UserClient;
+import com.early.autumn.domain.user.User;
+import com.early.autumn.earlyautumn.clients.UserClient;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
 

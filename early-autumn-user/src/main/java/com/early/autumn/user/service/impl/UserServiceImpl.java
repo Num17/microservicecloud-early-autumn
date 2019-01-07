@@ -1,6 +1,6 @@
 package com.early.autumn.user.service.impl;
 
-import com.early.autumn.common.domain.user.User;
+import com.early.autumn.domain.user.User;
 import com.early.autumn.user.dao.earlyautumn.UserMapper;
 import com.early.autumn.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

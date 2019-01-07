@@ -1,4 +1,4 @@
-package com.early.autumn.eureka;
+package com.early.autumn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

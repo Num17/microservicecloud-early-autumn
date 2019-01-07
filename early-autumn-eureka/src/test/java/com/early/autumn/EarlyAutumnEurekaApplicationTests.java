@@ -1,4 +1,4 @@
-package com.early.autumn.zuul;
+package com.early.autumn;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EarlyAutumnZuulApplicationTests {
+public class EarlyAutumnEurekaApplicationTests {
 
     @Test
     public void contextLoads() {

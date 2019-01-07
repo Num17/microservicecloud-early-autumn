@@ -1,6 +1,6 @@
-package com.early.autumn.common.constant.user;
+package com.early.autumn.constant.user;
 
-import com.early.autumn.common.handler.BaseEnum;
+import com.early.autumn.handler.BaseEnum;
 
 public enum GenderEnum implements BaseEnum<GenderEnum> {
 

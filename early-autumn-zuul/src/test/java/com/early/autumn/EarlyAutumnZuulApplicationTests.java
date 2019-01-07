@@ -1,4 +1,4 @@
-package com.early.autumn.early.dashboard;
+package com.early.autumn;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EarlyAutumnHystrixDashboardApplicationTests {
+public class EarlyAutumnZuulApplicationTests {
 
     @Test
     public void contextLoads() {

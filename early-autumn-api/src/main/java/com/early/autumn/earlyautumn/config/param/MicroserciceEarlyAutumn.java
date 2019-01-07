@@ -1,4 +1,4 @@
-package com.early.autumn.earlyautumn.api.config.param;
+package com.early.autumn.earlyautumn.config.param;
 
 import org.springframework.context.annotation.Configuration;
 

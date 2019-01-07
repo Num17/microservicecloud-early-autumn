@@ -1,4 +1,4 @@
-package com.early.autumn.common.handler;
+package com.early.autumn.handler;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;

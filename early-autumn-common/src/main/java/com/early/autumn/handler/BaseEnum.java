@@ -1,4 +1,4 @@
-package com.early.autumn.common.handler;
+package com.early.autumn.handler;
 
 /**
  * 枚举转换处理器

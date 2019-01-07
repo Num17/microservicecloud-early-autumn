@@ -1,7 +1,7 @@
-package com.early.autumn.common.domain.user;
+package com.early.autumn.domain.user;
 
 
-import com.early.autumn.common.constant.user.GenderEnum;
+import com.early.autumn.constant.user.GenderEnum;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

@@ -1,6 +1,6 @@
 package com.early.autumn.user.service;
 
-import com.early.autumn.common.domain.user.User;
+import com.early.autumn.domain.user.User;
 
 public interface UserService {
 

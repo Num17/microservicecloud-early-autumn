@@ -10,12 +10,12 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.early.autumn.common.constant.user.GenderEnum" alias="GenderEnum"/>
+        <typeAlias type="com.early.autumn.constant.user.GenderEnum" alias="GenderEnum"/>
     </typeAliases>
 
     <typeHandlers>
-        <typeHandler handler="com.early.autumn.common.handler.EnumHandler"
-                     javaType="com.early.autumn.common.constant.user.GenderEnum"
+        <typeHandler handler="com.early.autumn.handler.EnumHandler"
+                     javaType="com.early.autumn.constant.user.GenderEnum"
                      jdbcType="INTEGER"/>
     </typeHandlers>
 

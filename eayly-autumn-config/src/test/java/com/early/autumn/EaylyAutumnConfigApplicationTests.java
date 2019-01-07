@@ -1,4 +1,4 @@
-package com.early.autumn.config;
+package com.early.autumn;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
